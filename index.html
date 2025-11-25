@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vidas Libres </title>
+    <style>
+        
+        :root {
+            --purple-main: #8a2be2;
+            --light-purple: #f0e6ff;
+            --text-color: #333;
+            --red-alert: #e74c3c;
+            --border-light: #ccc;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: var(--text-color);
+            margin: 0;
+            background-color: var(--light-purple); 
+        }
+
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid var(--border-light);
+            background-color: white; 
+        }
+
+        /* Títulos */
+        h1 {
+            color: var(--purple-main);
+            text-align: center;
+            border-bottom: 2px solid var(--purple-main); /* Separador simple */
+            padding-bottom: 10px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: white; /* Título en blanco */
+            background-color: var(--purple-main); /* Fondo de color sólido para secciones */
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 1.5em;
+            text-align: left;
+        }
+
+        h3 {
+            color: var(--purple-main);
+            margin-top: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        
+        .nav-bar {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav-bar a {
+            color: var(--purple-main);
+            text-decoration: none;
+            padding: 0 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        
+        button {
+            background-color: var(--purple-main);
+            color: white;
+            border: 1px solid var(--purple-main);
+            padding: 8px 15px;
+            margin: 5px 10px 5px 0;
+            cursor: pointer;
+            border-radius: 0; 
+            font-weight: bold;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: var(--purple-main);
+            border-color: var(--border-light);
+        }
+
+        /* Bloque de datos y Testimonios (Estilo plano) */
+        .data-block, .testimonial-highlight {
+            background-color: #f0f0f0; /* Color gris muy claro */
+            border: 1px solid var(--border-light);
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .data-block h3 {
+            color: var(--purple-main);
+            border: none;
+        }
+        
+        /* Números urgentes */
+        .urgent-number {
+            background-color: var(--red-alert);
+            color: white;
+            padding: 3px 6px;
+            font-weight: bold;
+            border-radius: 0;
+            font-size: 0.9em;
+        }
+
+        /* Inputs de Formulario */
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 95%;
+            padding: 5px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Separadores */
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd; /* Línea sólida simple */
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 style="border-bottom: none;">💜 Vidas Libres</h1>
+            <nav class="nav-bar">
+                <a href="#inicio">Inicio</a> | 
+                <a href="#que-es">Qué es</a> | 
+                <a href="#ayuda">Pide ayuda</a> | 
+                <a href="#noticias">Noticias</a> | 
+                <a href="#educacion">Educación</a> | 
+                <a href="#testimonios">Testimonios</a> | 
+                <a href="#puntos-violeta">Puntos Violeta</a> | 
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+        <hr>
+
+        <a id="inicio"></a>
+        <h2>Página Principal (Inicio)</h2>
+        <p>💜 Vidas Libres</p>
+        <h1 style="font-size: 2.5em; border: none;">Por una vida libre de violencia</h1>
+        <p style="text-align: center;">Información, apoyo y recursos. No estás sola. 🤙</p>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <a href="#ayuda"><button>+ Necesito ayuda ahora</button></a>
+            <a href="#contacto"><button class="btn-white">📖 Quiero informarme</button></a>
+        </div>
+        
+        <h3>Datos Rápidos</h3>
+        <ul>
+            <li>[Teléfono] **016** - Atención 24/7. No deja rastro.</li>
+            <li>[Ubicación] **500+ Puntos Violeta** en toda España.</li>
+            <li>[Mano] **Apoyo** - Profesionales especializados.</li>
+        </ul>
+        <hr>
+
+        <a id="que-es"></a>
+        <h2>🔥 ¿Qué es la violencia de género?</h2>
+        <p style="text-align: center;">Es cualquier tipo de violencia contra las mujeres por el simple hecho de serlo.</p>
+        
+        <div>
+            <h3>Tipos de Violencia:</h3>
+            <ul>
+                <li>**Violencia física [💔]:** Agresiones que causan daño corporal.</li>
+                <li>**Violencia psicológica [🧠]:** Manipulación, humillación, intimidación, aislamiento.</li>
+                <li>**Violencia sexual [🧍‍♀️]:** Cualquier acto sexual no consentido.</li>
+            </ul>
+        </div>
+        
+        <div class="data-block" style="text-align: center;">
+            <h3>📢 Algunos datos importantes</h3>
+            <ul>
+                <li style="list-style: none;">**1 de 2** mujeres ha sufrido violencia de género</li>
+                <li style="list-style: none;">**016** Teléfono gratuito 24/7 sin rastro</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <a id="ayuda"></a>
+        <h2>🆘 Pide ayuda</h2>
+        <p style="text-align: center;">❤️ No estás sola. Hay gente preparada para ayudarte.</p>
+        
+        <div>
+            <h3>Números de Emergencia:</h3>
+            <ul>
+                <li><span class="urgent-number">016 URGENTE</span>: Atención a víctimas.</li>
+                <li><span class="urgent-number">112 URGENTE</span>: Emergencias.</li>
+                <li>**091**: Policía Nacional.</li>
+                <li>**062**: Guardia Civil.</li>
+            </ul>
+        </div>
+        
+        <br>
+        <h3>[MAPA] Puntos Violeta</h3>
+        <p style="text-align: center;">Espacios seguros cerca de ti</p>
+        <div style="text-align: center;">
+            <a href="https://www.puntosvioleta.com/index.html"><button>Ver mapa completo</button></a>
+        </div>
+        <hr>
+
+        <a id="noticias"></a>
+        <h2>Lo último</h2>
+        <p style="text-align: center;">Campañas, eventos y noticias importantes</p>
+        
+        <div style="text-align: center; margin-bottom: 15px;">
+            <a href="https://www.rtve.es/temas/violencia-de-genero/1188/"><button>Todas</button></a>
+            <button class="btn-white">Campañas</button>
+            <button class="btn-white">Eventos</button>
+        </div>
+        <br>
+
+        <div style="border: 1px solid var(--border-light); padding: 10px; margin-bottom: 15px;">
+            <h3 style="border: none;">[DESTACADO] Nueva campaña de sensibilización</h3>
+            <p>📅 25 de octubre de 2025 | 🏷️ Campañas</p>
+            <p>Lanzamos **#VidasLibresDeViolencia** para concienciar sobre el control digital.</p>
+            <a href="https://www.mjusticia.gob.es/es/ciudadania/victimas/oficinas-asistencia-victimas" style="color: var(--purple-main);">Leer más →</a>
+        </div>
+        
+        <h4>Artículos recientes:</h4>
+        <ul>
+            <li>(Eventos) Jornada de formación. <a href="#" style="color: var(--purple-main);">Leer más →</a></li>
+            <li>(Legislación) Nuevo protocolo. <a href="#" style="color: var(--purple-main);">Leer más →</a></li>
+        </ul>
+        <hr>
+
+        <a id="educacion"></a>
+        <h2>📚 Aprende y previene</h2>
+        <p style="text-align: center;">Información para todas las edades 💬</p>
+
+        <h3>💜 Material educativo</h3>
+        <dl>
+            <dt style="font-weight: bold;">Guía de prevención de violencia de género [PDF]</dt>
+            <dd>Material completo para entender, prevenir. <a href="https://violenciagenero.igualdad.gob.es/wp-content/uploads/Guia_para_Sensibilizar_y_Prevenir.pdf"><button style="padding: 5px 10px;">Descargar ⬇️</button></a></dd>
+            
+            <dt style="font-weight: bold;">Serie de vídeos educativos [Vídeo]</dt>
+            <dd>5 episodios sobre mitos. <a href="https://www.youtube.com/watch?v=HPVZIvluWmg"><button style="padding: 5px 10px;">Descargar ⬇️</button></a></dd>
+        </dl>
+        
+        <h3>💜 Recursos para jóvenes</h3>
+        <ul>
+            <li>**Relaciones sanas en la adolescencia**</li>
+            <li>**El amor no es control**</li>
+        </ul>
+        <hr>
+
+        <a id="testimonios"></a>
+        <h2>💪 Historias reales</h2>
+        <p style="text-align: center;">Mujeres que salieron adelante 💜</p>
+
+        <div>
+            <h3 style="border: none;">Testimonios:</h3>
+            <div class="testimonial-highlight">
+                <p>"Durante años pensé que el amor era sacrificio... ahora soy libre."</p>
+                <p style="font-size: 0.9em; text-align: right;">**Maria J.**</p>
+            </div>
+            
+            <li style="list-style: none; padding: 10px;">"La violencia psicológica es invisible pero destruye." - Ana S.</li>
+            <li style="list-style: none; padding: 10px;">"El 016 me ayudó a entender." - Laura M.</li>
+        </div>
+        <hr>
+
+        <a id="puntos-violeta"></a>
+        <h2>🎈 Puntos Violeta</h2>
+        <p style="text-align: center;">Lugares seguros cerca de ti 💜</p>
+        
+        <h3>Encuentra tu Punto Violeta más cercano</h3>
+        <ul>
+            <li>**Centro de Salud Plaza Mayor:** C/ Mayor, 15 | Madrid. 🕒 9:00 - 20:00.</li>
+            <li>**Biblioteca Municipal Centro:** Av. Constitución, 42 | Sevilla. 🕒 10:00 - 21:00.</li>
+        </ul>
+        <hr>
+
+        <a id="contacto"></a>
+        <h2>✉️ Hablemos</h2>
+        <p style="text-align: center;">Escríbenos o colabora con nosotros 🙌</p>
+
+        <h3 style="text-align: center;">Envíanos un mensaje</h3>
+        <form>
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+            
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" placeholder="tu@email.com">
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            
+            <button type="submit">✈️ Enviar mensaje</button>
+        </form>
+        <br>
+
+        <h3>Información de contacto</h3>
+        <p>✉️ Correo electrónico: **info@vidaslibres.org**</p>
+        <p>📞 Teléfono: **+34 912 345 678**</p>
+        
+        <h3 style="border: none;">Sobre la Asociación</h3>
+        <p style="font-size: 0.9em;">Vidas Libres es una asociación sin ánimo de lucro dedicada a la prevención y erradicación de la violencia de género desde 2018.</p>
+
+    </div>
+</body>
+</html>
